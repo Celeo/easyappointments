@@ -1,0 +1,3 @@
+[submodule "easyappointments"]
+	path = easyappointments
+	url = https://github.com/alextselegidis/easyappointments

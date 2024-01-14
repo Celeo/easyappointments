@@ -6,7 +6,7 @@
 
 $config['useragent'] = 'Easy!Appointments';
 $config['protocol'] = 'smtp';
-$config['mailtype'] = 'text';
+$config['mailtype'] = 'html';
 $config['smtp_debug'] = '0';
 $config['smtp_auth'] = TRUE;
 $config['smtp_host'] = Config::SMTP_HOST;

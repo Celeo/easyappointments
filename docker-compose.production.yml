@@ -4,7 +4,6 @@ services:
     image: celeo/zdv-easy-appointments
     environment:
       - BASE_URL=https://training.zdvartcc.org
-      - DEBUG_MODE=TRUE
       - DB_HOST=mysql
       - DB_NAME=easyappointments
       - DB_USERNAME=root

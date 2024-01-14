@@ -149,8 +149,6 @@ class Email {
             'company_name' => $settings['company_name'],
             'customer_name' => $customer['first_name'] . ' ' . $customer['last_name'],
             'customer_email' => $customer['email'],
-            'customer_phone' => $customer['phone_number'],
-            'customer_address' => $customer['address'],
         ], TRUE);
 
         $mailer = $this->create_mailer();
@@ -248,8 +246,6 @@ class Email {
             'company_name' => $settings['company_name'],
             'customer_name' => $customer['first_name'] . ' ' . $customer['last_name'],
             'customer_email' => $customer['email'],
-            'customer_phone' => $customer['phone_number'],
-            'customer_address' => $customer['address'],
             'reason' => $reason->get(),
         ], TRUE);
 

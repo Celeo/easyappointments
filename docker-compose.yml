@@ -10,6 +10,9 @@ services:
       - DB_NAME=easyappointments
       - DB_USERNAME=root
       - DB_PASSWORD=secret
+      - SMTP_HOST=
+      - SMTP_USER=
+      - SMTP_PASS=
     ports:
       - '80:80'
   mysql:

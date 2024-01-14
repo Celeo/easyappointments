@@ -11,4 +11,8 @@ sed -i "s|const DB_NAME       = 'easyappointments';|const DB_NAME       = '$DB_N
 sed -i "s|const DB_USERNAME   = 'root';|const DB_USERNAME   = '$DB_USERNAME';|g" config.php
 sed -i "s|const DB_PASSWORD   = 'root';|const DB_PASSWORD   = '$DB_PASSWORD';|g" config.php
 
+sed -i "s|const SMTP_HOST   = '';|const SMTP_HOST   = '$SMTP_HOST';|g" config.php
+sed -i "s|const SMTP_USER   = '';|const SMTP_USER   = '$SMTP_USER';|g" config.php
+sed -i "s|const SMTP_PASS   = '';|const SMTP_PASS   = '$SMTP_PASS';|g" config.php
+
 apache2-foreground

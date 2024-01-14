@@ -44,10 +44,18 @@ class Config {
     const DB_PASSWORD   = 'root';
 
     // ------------------------------------------------------------------------
+    // SMTP EMAIL
+    // ------------------------------------------------------------------------
+
+    const SMTP_HOST   = ''
+    const SMTP_USER   = ''
+    const SMTP_PASS   = ''
+
+    // ------------------------------------------------------------------------
     // GOOGLE CALENDAR SYNC
     // ------------------------------------------------------------------------
 
-    const GOOGLE_SYNC_FEATURE   = FALSE; // Enter TRUE or FALSE
+    const GOOGLE_SYNC_FEATURE   = FALSE;
     const GOOGLE_PRODUCT_NAME   = '';
     const GOOGLE_CLIENT_ID      = '';
     const GOOGLE_CLIENT_SECRET  = '';

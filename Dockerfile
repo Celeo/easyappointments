@@ -36,6 +36,9 @@ ENV DB_HOST="db"
 ENV DB_NAME="easyappointments"
 ENV DB_USERNAME="root"
 ENV DB_PASSWORD="secret"
+ENV SMTP_HOST=""
+ENV SMTP_USER=""
+ENV SMTP_PASS=""
 
 EXPOSE 80
 WORKDIR /var/www/html

@@ -176,11 +176,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="select-provider">
-                                    <strong><?= lang('provider') ?></strong>
-                                </label>
-
-                                <select id="select-provider" class="form-control"></select>
+                                <select id="select-provider" class="form-control" hidden></select>
                             </div>
 
                             <div id="service-description"></div>
@@ -254,13 +250,7 @@
                                 </label>
                                 <input type="text" id="first-name" class="required form-control" maxlength="100"/>
                             </div>
-                            <div class="form-group">
-                                <label for="last-name" class="control-label">
-                                    <?= lang('last_name') ?>
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" id="last-name" class="required form-control" maxlength="120"/>
-                            </div>
+
                             <div class="form-group">
                                 <label for="email" class="control-label">
                                     <?= lang('email') ?>
@@ -268,40 +258,24 @@
                                 </label>
                                 <input type="text" id="email" class="required form-control" maxlength="120"/>
                             </div>
-                            <div class="form-group">
-                                <label for="phone-number" class="control-label">
-                                    <?= lang('phone_number') ?>
-                                    <?= $require_phone_number === '1' ? '<span class="text-danger">*</span>' : '' ?>
-                                </label>
-                                <input type="text" id="phone-number" maxlength="60"
-                                       class="<?= $require_phone_number === '1' ? 'required' : '' ?> form-control"/>
-                            </div>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <div class="form-group">
-                                <label for="address" class="control-label">
-                                    <?= lang('address') ?>
+                                <label for="last-name" class="control-label">
+                                    <?= lang('last_name') ?>
+                                    <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="address" class="form-control" maxlength="120"/>
+                                <input type="text" id="last-name" class="required form-control" maxlength="120"/>
                             </div>
-                            <div class="form-group">
-                                <label for="city" class="control-label">
-                                    <?= lang('city') ?>
-                                </label>
-                                <input type="text" id="city" class="form-control" maxlength="120"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="zip-code" class="control-label">
-                                    <?= lang('zip_code') ?>
-                                </label>
-                                <input type="text" id="zip-code" class="form-control" maxlength="120"/>
-                            </div>
+                        </div>
+
+                        <div class="col-12">
                             <div class="form-group">
                                 <label for="notes" class="control-label">
                                     <?= lang('notes') ?>
                                 </label>
-                                <textarea id="notes" maxlength="500" class="form-control" rows="1"></textarea>
+                                <textarea id="notes" maxlength="500" class="form-control" rows="5"></textarea>
                             </div>
                         </div>
                     </div>

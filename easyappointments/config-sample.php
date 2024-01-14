@@ -47,9 +47,9 @@ class Config {
     // SMTP EMAIL
     // ------------------------------------------------------------------------
 
-    const SMTP_HOST   = ''
-    const SMTP_USER   = ''
-    const SMTP_PASS   = ''
+    const SMTP_HOST   = '';
+    const SMTP_USER   = '';
+    const SMTP_PASS   = '';
 
     // ------------------------------------------------------------------------
     // GOOGLE CALENDAR SYNC

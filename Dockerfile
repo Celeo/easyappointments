@@ -20,7 +20,7 @@ RUN wget https://nodejs.org/dist/v20.10.0/node-v20.10.0-linux-x64.tar.xz \
 
 # run the build
 COPY ./easyappointments .
-RUN npm i \
+RUN npm ci \
     && composer install \
     && npm run build
 

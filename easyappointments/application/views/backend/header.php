@@ -62,16 +62,6 @@
                 </a>
             </li>
 
-            <?php $hidden = ($privileges[PRIV_CUSTOMERS]['view'] == TRUE) ? '' : 'd-none' ?>
-            <?php $active = ($active_menu == PRIV_CUSTOMERS) ? 'active' : '' ?>
-            <li class="nav-item <?= $active . $hidden ?>">
-                <a href="<?= site_url('backend/customers') ?>" class="nav-link"
-                   data-tippy-content="<?= lang('manage_customers_hint') ?>">
-                    <i class="fas fa-user-friends mr-2"></i>
-                    <?= lang('customers') ?>
-                </a>
-            </li>
-
             <?php $hidden = ($privileges[PRIV_SERVICES]['view'] == TRUE) ? '' : 'd-none' ?>
             <?php $active = ($active_menu == PRIV_SERVICES) ? 'active' : '' ?>
             <li class="nav-item <?= $active . $hidden ?>">

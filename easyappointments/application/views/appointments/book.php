@@ -147,8 +147,13 @@
                                             }
                                         }
 
-                                        foreach ($grouped_services as $key => $group)
+                                        // sort the categories
+                                        $keys = array_keys($grouped_services);
+                                        sort($keys);
+
+                                        foreach ($keys as $key)
                                         {
+                                            $group = $grouped_services[$key];
                                             $group_label = ($key != 'uncategorized')
                                                 ? $group[0]['category_name'] : 'Uncategorized';
 

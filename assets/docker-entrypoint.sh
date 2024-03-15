@@ -15,4 +15,10 @@ sed -i "s|const SMTP_HOST   = '';|const SMTP_HOST   = '$SMTP_HOST';|g" config.ph
 sed -i "s|const SMTP_USER   = '';|const SMTP_USER   = '$SMTP_USER';|g" config.php
 sed -i "s|const SMTP_PASS   = '';|const SMTP_PASS   = '$SMTP_PASS';|g" config.php
 
+sed -i "s|const GOOGLE_SYNC_FEATURE   = FALSE;|const GOOGLE_SYNC_FEATURE   = $GOOGLE_SYNC_FEATURE;|g" config.php
+sed -i "s|const GOOGLE_PRODUCT_NAME   = '';|const GOOGLE_PRODUCT_NAME   = '$GOOGLE_PRODUCT_NAME';|g" config.php
+sed -i "s|const GOOGLE_CLIENT_ID      = '';|const GOOGLE_CLIENT_ID      = '$GOOGLE_CLIENT_ID';|g" config.php
+sed -i "s|const GOOGLE_CLIENT_SECRET  = '';|const GOOGLE_CLIENT_SECRET  = '$GOOGLE_CLIENT_SECRET';|g" config.php
+sed -i "s|const GOOGLE_API_KEY        = '';|const GOOGLE_API_KEY        = '$GOOGLE_API_KEY';|g" config.php
+
 apache2-foreground

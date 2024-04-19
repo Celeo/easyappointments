@@ -12,7 +12,7 @@ services:
       - SMTP_HOST=
       - SMTP_USER=
       - SMTP_PASS=
-      - GOOGLE_SYNC_FEATURE=
+      - GOOGLE_SYNC_FEATURE=FALSE
       - GOOGLE_PRODUCT_NAME=
       - GOOGLE_CLIENT_ID=
       - GOOGLE_CLIENT_SECRET=

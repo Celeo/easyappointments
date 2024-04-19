@@ -253,7 +253,7 @@
                                     <?= lang('first_name') ?>
                                     <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="first-name" class="required form-control" maxlength="100"/>
+                                <input type="text" id="first-name" class="required form-control" maxlength="100" tabindex="1"/>
                             </div>
 
                             <div class="form-group">
@@ -261,7 +261,7 @@
                                     <?= lang('email') ?>
                                     <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="email" class="required form-control" maxlength="120"/>
+                                <input type="text" id="email" class="required form-control" maxlength="120" tabindex="3"/>
                             </div>
                         </div>
 
@@ -271,7 +271,7 @@
                                     <?= lang('last_name') ?>
                                     <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="last-name" class="required form-control" maxlength="120"/>
+                                <input type="text" id="last-name" class="required form-control" maxlength="120" tabindex="2"/>
                             </div>
                         </div>
 

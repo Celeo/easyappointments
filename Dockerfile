@@ -29,16 +29,7 @@ RUN npm ci \
 # set up the image for running
 FROM php:8.0-apache
 
-ENV BASE_URL="http://localhost"
 ENV LANGUAGE="english"
-ENV DEBUG_MODE="FALSE"
-ENV DB_HOST="db"
-ENV DB_NAME="easyappointments"
-ENV DB_USERNAME="root"
-ENV DB_PASSWORD="secret"
-ENV SMTP_HOST=""
-ENV SMTP_USER=""
-ENV SMTP_PASS=""
 
 EXPOSE 80
 WORKDIR /var/www/html

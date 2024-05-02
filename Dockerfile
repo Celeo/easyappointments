@@ -49,5 +49,6 @@ RUN apt-get update \
 
 # copy in files
 COPY --from=build --chown=www-data:www-data /srv/build .
+RUN mkdir -p /var/www/html/storage/logs && chmod 777 -R /var/www/html/storage
 
 ENTRYPOINT ["docker-entrypoint.sh"]

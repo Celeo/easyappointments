@@ -157,7 +157,7 @@ class Email {
         $mailer->AddAddress($recipient_email->get());
         $mailer->Subject = $title->get();
         $mailer->Body = $html;
-        $mailer->addStringAttachment($ics_stream->get(), 'invitation.ics');
+        // $mailer->addStringAttachment($ics_stream->get(), 'invitation.ics');
 
         if ( ! $mailer->Send())
         {

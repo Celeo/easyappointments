@@ -92,7 +92,8 @@ window.FrontendBookApi = window.FrontendBookApi || {};
                     }
 
                     var providerTimezone = provider.timezone;
-                    var selectedTimezone = $('#select-timezone').val();
+                    // var selectedTimezone = $('#select-timezone').val();
+                    var selectedTimezone = 'America/Denver';
                     var timeFormat = GlobalVariables.timeFormat === 'regular' ? 'h:mm a' : 'HH:mm';
 
                     response.forEach(function (availableHour) {

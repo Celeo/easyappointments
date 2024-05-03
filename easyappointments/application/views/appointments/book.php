@@ -216,7 +216,9 @@
                             <div id="select-time">
                                 <div class="form-group">
                                     <label for="select-timezone"><?= lang('timezone') ?></label>
-                                    <?= render_timezone_dropdown('id="select-timezone" class="form-control" value="UTC"'); ?>
+                                    <select id="select-timezone" class="form-control">
+                                        <option value="America/Denver" selected>Denver (-7:00)</option>
+                                    </select>
                                 </div>
 
                                 <div id="available-hours"></div>

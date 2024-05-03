@@ -130,7 +130,7 @@ window.FrontendBook = window.FrontendBook || {};
             }
         });
 
-        $('#select-timezone').val(Intl.DateTimeFormat().resolvedOptions().timeZone);
+        // $('#select-timezone').val(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
         // Bind the event handlers (might not be necessary every time we use this class).
         if (defaultEventHandlers) {
@@ -619,7 +619,8 @@ window.FrontendBook = window.FrontendBook || {};
             address: $('#address').val(),
             city: $('#city').val(),
             zip_code: $('#zip-code').val(),
-            timezone: $('#select-timezone').val()
+            // timezone: $('#select-timezone').val()
+            timezone: 'America/Denver'
         };
 
         data.appointment = {
@@ -700,9 +701,9 @@ window.FrontendBook = window.FrontendBook || {};
             $('#address').val(customer.address);
             $('#city').val(customer.city);
             $('#zip-code').val(customer.zip_code);
-            if (customer.timezone) {
-                $('#select-timezone').val(customer.timezone)
-            }
+            // if (customer.timezone) {
+            //     $('#select-timezone').val(customer.timezone)
+            // }
             var appointmentNotes = (appointment.notes !== null)
                 ? appointment.notes : '';
             $('#notes').val(appointmentNotes);
